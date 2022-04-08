@@ -37,6 +37,66 @@ body{
     margin-left: 20px;
 }
 #navigation>a:hover{
-    background-color: grey;
+    background-color: #c0c0c0;
     color:black;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin:10px 20px 0px 20px;
+}
+/*Prev-Next*/
+#prev-next{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: orangered;
+}
+/*Prev-Next Link Styling*/
+#prev-next>a{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin:10px;
+}
+#prev-next>a:hover{
+    background-color: #c0c0c0;
+    color:black;
+}
+#next{
+    content: "\2192";
+}
+#left{
+    content:"\2190";
+}
+/*FAQ*/
+#faq{
+    background-color: #c0c0c0;
+    color:black;
+    text-align: center;
+}
+#faq>h1{
+    letter-spacing: 1px;
+}
+/*FAQ_CONTENT*/
+#faq-list{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#faq-list>li{
+    margin:10px 0px 10px 0px;
 }
