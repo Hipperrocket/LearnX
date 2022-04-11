@@ -5,24 +5,16 @@ body{
 }
 /*Header*/
 #header{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: 30% 70%;
 }
 /*Logo*/
 #logo{   
-    margin:-0px 20px 0px 20px;
+    margin:0px 20px 0px 20px;
 }
 /*Navigation Buttons*/
 #navigation{
-    margin: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin: 35px 0px 0px 0px;
 }
 /*Styling the links*/
 #navigation>a{
@@ -43,16 +35,17 @@ body{
 
 /*Footer*/
 #footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin:10px 20px 0px 20px;
+    display:grid;
+    grid-template-columns: 100%;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    margin-left: -10px;
 }
 /*Prev-Next*/
 #prev-next{
-    display:flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30% 30%;
     justify-content: space-between;
     background-color: orangered;
 }
@@ -88,10 +81,6 @@ body{
 /*FAQ_CONTENT*/
 #faq-list{
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin-left: 10px;
