@@ -10,28 +10,40 @@
             <!--LINKS FOR NAVIGATION-->
             <img src="images/logo.png" width="150px" height="130px">
             <div id="navigation">
-                <a href="#" class="active">HOME</a>
+                <a href="index.html" class="active">HOME</a>
                 <a href="#" class="inactive">VIDEOS</a>
                 <a href="#" class="inactive">TUTORS</a>
                 <a href="#" class="inactive">TEST YOURSELF</a>
                 <a href="contact-us.html" class="inactive">CONTACT US</a>
             </div>
         </div>
-        <div id="footer">
+        <div id="block-faq">
             <div id="prev-next">
-                <a href="#"><span id="left">&#8592;</span>PREVIOUS PAGE</a>
-                <a href="#">NEXT PAGE<span id="next">&#8594;</span></a>
+                <a href="#">&#8701; PREVIOUS PAGE</a>
+                <a href="#">NEXT PAGE &#8702;</a>
             </div>
             <div id="faq">
                 <h1>FAQ</h1>
                 <div id="faq-content">
-                    <ol id="faq-list" type="I">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </li>
-                    </ol>
+                    <button class ="container" onclick="myFunction(0)"><h3>What is LearnX?</h3></button>
+                    <div class="answer"><h3>LearnX is a non-profit, massive open online course(MOOC) platform.
+                        It hosts online university-level courses in a wide range 
+                        of disciplines to a worldwide student body for free of charge.</h3></div>
+                    <button class="container" onclick="myFunction(1)"><h3>Is LearnX Free?</h3></button>
+                    <div class="answer"><h3>Yes, LearnX provides it's content free of charge.</h3></div>
+                    <button class="container" onclick="myFunction(2)"><h3>Courses and programs are offered on LearnX</h3></button>
+                    <div class="answer"><h3>Courses are catered to all types of 
+                        students, including those 
+                        looking to enter the job market, earn promotions, 
+                        or explore new interests.</h3></div>        
                 </div>
             </div>
         </div>
+        <div id="footer">
+            <p>&#169; LearnX ~ Made with 🧡</p>
+        </div>
+
+        <script src="index.js">
+        </script>
     </body>
 </html>

@@ -51,8 +51,8 @@ body{
     background-color: #3d5a80;
     color:white;
 }
-/*Footer*/
-#footer{
+/*FAQ*/
+#block-faq{
     display:grid;
     grid-template-columns: 100%;
     width:100%;
@@ -78,12 +78,6 @@ body{
     background-color: #3d5a80;
     color:white;
 }
-#next{
-    content: "\2192";
-}
-#left{
-    content:"\2190";
-}
 /*FAQ*/
 #faq{
     background-color: #98c1d9;
@@ -94,20 +88,32 @@ body{
     letter-spacing: 1px;
 }
 /*FAQ_CONTENT*/
-#faq-list{
-    text-align: left;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
+#faq-content{
+    display: grid;
+    margin-bottom: 10px;
+    
 }
-#faq-list>li{
-    margin:10px 0px 10px 0px;
+.container{
+    background-color: #3d5a80;
+    color: white;
+    padding:20px;
+    border:none;
+}
+.container:hover{
+    background-color: #98c1d9;
+}
+/*FAQ Answers*/
+.answer{
+    background-color: #293241;
+    color:white;
+    text-align: center;
+    display: none;
+    padding:10px 0px 10px 0px;
 }
 /*CONTACT-US PAGE
 Consist of a contact form.
 Contact-Info*/
-h1{
+#gotq{
     color: #293241;
     padding-bottom: 20px;
     border-bottom:10px solid #3d5a80;
@@ -167,7 +173,7 @@ h1{
 }
 #content>a[id="email"]{
     text-decoration: none;
-    color:white;
+    color:#3d5a80;
 }
 #content{
     margin-top: 25%;
@@ -197,4 +203,13 @@ h1{
     text-decoration: none;
     text-align: center;
     padding:10px 10px 10px 10px;
+}
+/*Footer*/
+#footer{
+    background-color: #3d5a80;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: -12px;
 }
