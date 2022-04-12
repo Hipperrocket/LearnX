@@ -6,62 +6,77 @@ body{
 /*Header*/
 #header{
     display:grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 90%;
+    column-gap:20px;
 }
 /*Logo*/
 #logo{   
-    margin:0px 20px 0px 20px;
+    /*margin:0px 20px 0px 20px;*/
 }
 /*Navigation Buttons*/
 #navigation{
-    margin: 35px 0px 0px 0px;
+    /*margin: 35px 0px 0px 0px;*/
+    display: grid;
+    grid-template-columns: 90% 90% 90% 90% 90%;
+    column-gap: 20px;
+    align-items: center;
+    width:20%;
+    height:10%;
+    margin-top:25px;
 }
 /*Styling the links*/
-#navigation>a{
+.inactive{
     text-align: center;
     color: white;
-    background-color: black;
-    padding: 10px 20px 10px 20px;
+    background-color: #293241;
+    padding: 20px 10px 20px 10px;
     text-decoration: none;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
 }
-#navigation>a:hover{
-    background-color: #c0c0c0;
-    color:black;
+.inactive:hover{
+    background-color: #3d5a80;
+    color:#e0fbfc;
 }
-
+.active{
+    background-color: #ee6c4d;
+    text-align: center;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.active:hover{
+    background-color: #3d5a80;
+    color:white;
+}
 /*Footer*/
 #footer{
     display:grid;
     grid-template-columns: 100%;
-    position: absolute;
-    bottom: 0;
     width:100%;
-    margin-left: -10px;
 }
 /*Prev-Next*/
 #prev-next{
     display: grid;
     grid-template-columns: 30% 30%;
     justify-content: space-between;
-    background-color: orangered;
+    background-color: #ee6c4d;
 }
 /*Prev-Next Link Styling*/
 #prev-next>a{
     text-align: center;
     color: white;
-    background-color: black;
+    background-color:#293241;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     letter-spacing: 2px;
     margin:10px;
 }
 #prev-next>a:hover{
-    background-color: #c0c0c0;
-    color:black;
+    background-color: #3d5a80;
+    color:white;
 }
 #next{
     content: "\2192";
@@ -71,8 +86,8 @@ body{
 }
 /*FAQ*/
 #faq{
-    background-color: #c0c0c0;
-    color:black;
+    background-color: #98c1d9;
+    color:#293241;
     text-align: center;
 }
 #faq>h1{
@@ -88,4 +103,98 @@ body{
 }
 #faq-list>li{
     margin:10px 0px 10px 0px;
+}
+/*CONTACT-US PAGE
+Consist of a contact form.
+Contact-Info*/
+h1{
+    color: #293241;
+    padding-bottom: 20px;
+    border-bottom:10px solid #3d5a80;
+    margin-left: 30px;
+    width:50%;
+}
+/*Container*/
+#head-contact{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 500px;
+    column-gap: 10px;
+}
+/*Styling the form*/
+#contact-form{
+    background:url(images/world.png) no-repeat center center;
+    background-color: #ee6c4d;
+    background-size: contain;
+    border-left:10px solid #293241;
+}
+#contact-us{
+    display:grid;
+    grid-template-rows: 25% 25% 60% 25%;
+    row-gap: 20px;
+    width:50%;
+    padding:20px 0px 90px 10px;
+    margin-left: 25%;
+    margin-top:12%;
+}
+#contact-us>input{
+    border-left:10px solid #3d5a80;
+    text-align: center;
+    border-top:white;
+}
+#contact-us>textarea{
+    border-left:10px solid #3d5a80;
+    border-top: white;
+}
+#contact-us>input[type="submit"]{
+    color:white;
+    background-color: #293241;
+    border:none;
+    width:50%;
+    margin-left:25%;
+    letter-spacing: 2px;
+}
+#contact-us>input[type="submit"]:hover{
+    background-color: #3d5a80;
+}
+#contact-info{
+    color:white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: #ee6c4d;
+    border-left:10px solid #293241;
+    padding-left: 20px;
+}
+#content>a[id="email"]{
+    text-decoration: none;
+    color:white;
+}
+#content{
+    margin-top: 25%;
+}
+/*Styling Social Info*/
+#social{
+    display: grid;
+    row-gap: 30px;
+    margin-top: 12%;
+}
+#social>h2{
+    letter-spacing: 3px;
+    border-bottom: 5px solid #3d5a80;
+    padding-bottom: 20px;
+    width: 320px;
+    color: #e0fbfc;
+}
+#contain-social{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 20px;
+    width:100%;
+}
+#contain-social>a{
+    background-color: #98c1d9;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding:10px 10px 10px 10px;
 }
