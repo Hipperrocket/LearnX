@@ -33,10 +33,12 @@ body{
     text-decoration: none;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 .inactive:hover{
     background-color: #3d5a80;
     color:#e0fbfc;
+    border-radius: 8px;
 }
 .active{
     background-color: #ee6c4d;
@@ -46,10 +48,12 @@ body{
     text-decoration: none;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 .active:hover{
     background-color: #3d5a80;
     color:white;
+    border-radius: 8px;
 }
 /*FAQ*/
 #block-faq{
@@ -72,6 +76,7 @@ body{
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     letter-spacing: 2px;
+
     margin:10px;
 }
 #prev-next>a:hover{
@@ -213,3 +218,35 @@ Contact-Info*/
     font-weight: bold;
     margin-top: -12px;
 }
+#subjecttopic{
+    max-width: fit-content;
+   background-color: #3d5a80;
+   padding: 15px 15px 15px 15px;
+   border-radius: 4px;
+}
+#subjectinfo{
+    
+     background-color: #3d5a80;
+   
+     padding: 10px 10px 10px 10px;
+     border-radius: 4px;
+     
+ 
+ }
+ .sactive{
+     width: 5cm;
+    background-color: #ee6c4d;
+    text-align: center;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+}
+.sactive:hover{
+    background-color: #3d5a80;
+    color:white;
+    border-radius: 8px;}
+ 
